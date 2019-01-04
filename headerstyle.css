@@ -1,0 +1,40 @@
+/*start of header style*/
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.header 
+{
+    overflow: hidden;
+    background-color:#408080; 
+}
+.headnav 
+{
+    float: left;
+    overflow: hidden;
+}
+
+.headnav .headnavbtn
+{
+    font-size: 14px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 16px;
+    background-color: #408080;
+}
+.header a:hover, .headnav:hover 
+{
+    background-color: #cc0033;
+}
+
+.headnavbtn:hover
+{
+color:red;
+}
+.headnav:hover 
+{
+    display: block;
+}
+/*end of header style*/

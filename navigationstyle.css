@@ -1,0 +1,62 @@
+/*start of navigation bar style*/
+.navbar 
+{
+    overflow: hidden;
+    background-color:#00ffff ; 
+}
+.navbar a
+{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px  30px;
+    text-decoration: none;
+}
+.subnav 
+{
+    float: left;
+    overflow: hidden;
+}
+.subnav .subnavbtn
+{
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 25px 16px;
+    background-color: #00ffff;
+}
+.navbar a:hover, .subnav:hover .subnavbtn 
+{
+    background-color: #cc0033;
+}
+.subnav-content
+{
+    display: none;
+    position: absolute;
+    left: 10;
+    background-color:white ;
+}
+
+.subnav-content a 
+{
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+.subnav-content a:hover
+{
+    background-color: #eee;
+}
+
+.subnav:hover .subnav-content 
+{
+    display: block;
+}
+.homepage-content
+{
+padding-top:60px;
+}
+/*end of navigation bar style*/

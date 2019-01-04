@@ -1,0 +1,20 @@
+/*start of blocks style*/
+.imagewithcontent
+{
+background-color:grey;
+padding:30px 30px 50px;
+}
+.blocks,.offers
+{
+background-color:lightgrey;
+width:215px;
+height:450px;
+padding-left:60px;
+}
+.offers,.blocks
+{
+color:#646464;
+font-family: "Times New Roman", Times, serif;
+}
+/*end of blocks style*/
+

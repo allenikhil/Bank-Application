@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank Account Registration</title>
+<style type="text/css">
+input[type=text], input[type=password]
+ {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: white;
+}
+  .submitbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: green;
+            }
+            
+    .cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+            }        
+  /*login tab style*/
+  sup { color:red}
+  
+  table
+	{
+	 padding:20px;
+	 border:3px solid #ccff00;
+	}
+	h2,p
+	{
+	color:#00ffff;
+	}
+	h5
+	{
+	color:black;
+	font-size: 14px;
+	}
+
+</style>
+</head>
+<body style="background-color:grey">
+
+<center>
+<div id="Registraion" class="tabcontent">
+ 
+  <h2>Registration Form To Create Bank Account</h2>
+<p>Please fill in this form to create an account.</p>
+
+<form action="bankaccount" method="post">
+
+<table style="color:blue;">
+	<tr>
+ 	<td> <b>Fullname:<sup >*</sup></b></td>
+   	<td> <input type="text" placeholder="Enter FullName" name="fname" required onblur="validateFullName()"></td>
+    </tr>
+    
+    <tr>
+    <td> <h5>(Enter FirstLetter Capital and Length Less than 12)</h5></td>
+    </tr>
+    
+    <tr>
+  <td>  <b>MobileNumber:<sup >*</sup></b></td>
+   <td> <input type="text" placeholder="Enter MobileNumber" name="mbn" required onblur="validatePhone()"></td>
+    </tr>
+    
+    <tr>
+    <td> <h5>(Enter 10 Digits Only)</h5></td>
+    </tr>
+    
+    <tr>
+    <td><b>Email Id:<sup >*</sup></b></td>
+    <td><input type="text" placeholder="Enter Email Id" name="eid" required onblur="validateEmail()"></td>
+    </tr>
+    
+    <tr>
+   <td> <h5>(Enter Correct Email-Id)</h5></td>
+    </tr>
+    
+    <tr>
+   <td> <b>Account Type:<sup >*</sup></b></td>
+	<td><select name=account>
+	<option value="" selected>- Select -</option>
+	<option value="personal" >Personal</option>
+	<option value="business" >Business</option>
+	<option value="corporate" >Corporate</option>
+	</select></td> 
+      </tr> 
+      
+      <tr>
+      <td></td>
+      </tr>
+      <tr> 
+   <td> <button type="submit" class="submitbtn" style="color:white;font-size:20px;margin-left:20px;">Register</button></td>
+   <td> <button type="button" class="cancelbtn" style="color:white;font-size:20px;margin-left:50px;">Cancel</button> </td>
+    </tr>
+    
+    </table>
+</form>
+</div>
+
+</center>
+
+<script>
+
+function validateFullName()
+{
+	 var pattern=/^[A-Z]{1}([a-z]{1,12})$/
+	 var firstname=document.regjs.fname.value
+	 if(firstname.match(pattern))
+	 {
+		 document.regjs.fname.style.borderColor='green'
+		 document.regjs.lname.focus()
+	 }
+	 else
+	 {
+		document.regjs.fname.style.borderColor='red'
+		document.regjs.fname.focus()
+	 }
+
+}
+
+function validatePhone()
+{
+	if(document.regjs.mbn.value.match(/^[0-9]{10}$/))
+	 {
+		 document.regjs.mbn.style.borderColor='green'
+		 document.regjs.eid.focus()
+	 }
+	else
+	 {
+		document.regjs.mbn.style.borderColor='red'
+		document.regjs.mbn.focus()
+	 }
+}
+
+function validateEmail()
+{
+	if(document.regjs.eid.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))
+	 {
+		 document.regjs.eid.style.borderColor='green'
+		 document.regjs.Gender.focus()
+	 }
+	else
+	 {
+		document.regjs.eid.style.borderColor='red'
+		document.regjs.eid.focus()
+	 }
+}
+
+</script>
+
+</body>
+</html>

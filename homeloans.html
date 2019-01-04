@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Loan</title>
+<link rel = "stylesheet" type = "text/css" href = "navigationstyle.css" />
+<link rel = "stylesheet" type = "text/css" href = "topbuttonfooter.css" />
+<link rel = "stylesheet" type = "text/css" href = "copyright.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js files/topbutton.js"></script>
+<style type="text/css">
+.navbar
+{
+margin-left:-10px;
+margin-right:-10px;
+margin-top:-10px;
+}
+.subnav img
+{
+margin-bottom:-4px;
+}
+.profile b
+{
+color:blue;
+}
+body
+{
+background-color:grey;
+}
+
+td{padding-right:25px;}
+table{margin-left:300px}
+
+.loanhome{margin-top:20px;margin-left:-10px;
+margin-right:-10px;color:white;background-color:#cc0066}
+select{font-size:18px;border-radius:10px}
+input[type=text]{padding:5px;border-radius:10px;out-line:0px}
+input[type=submit]{font-size:25px;border-radius:10px;out-line:0px;padding-left:15px;padding-right:15px}
+</style>
+
+</head>
+<body>	
+
+<!--  start of navbar --> 
+<div class="navbar">
+
+<div class="subnav">
+<img src="image/viewlogo.png" width="150" height="68" border="0" alt="logo"  >
+</div>
+
+  <div class="subnav">
+   <button class="subnavbtn" >Apply Loans</button>
+   
+   	<div class="subnav-content">
+      <a href="homeloans.html">Home Loans</a>
+      <a href="carloans.html">Car Loans</a>
+      <a href="goldloans.html">Gold Loans</a>
+    </div>
+    </div>
+
+  <div class="subnav">
+  <a href="">  <button class="subnavbtn" style="padding: 15px 10px;">Cards </button></a>
+  </div>
+  
+  <div class="subnav">
+   <a href=""><button class="subnavbtn" style="padding: 15px 10px;">Look for offers</button></a>
+   </div>
+   
+   <div class="subnav">
+   <a href="#profile"><button class="subnavbtn" style="padding: 15px 10px;">Profile</button></a>
+   </div> 
+   
+   <div class="subnav">
+   <a href="index.html"><button class="subnavbtn" onclick="dontback" style="padding: 15px 10px;">Logout</button></a>
+   </div> 
+   
+      </div>
+  <!--end of navbar-->
+
+ <div class="loanhome">
+<form method="post" action="homeloan">
+  <table>
+<tr>
+	<td><h3>Type of Homeloan?<br> 
+	<select name="type" required>
+		<option value="" placeholder="Select type">Select type
+		<option value="new home">New Home Loan
+		<option value="old home">Old Home Loan
+	</select></h3>
+	</td>
+	<td><h3>Required Home Loan Amount:<br>
+		<input type="text" name="amt" size=30px placeholder="Enter Amount" required>
+	</h3>
+	</td>
+</tr>
+<tr>
+	<td><h3>Home Owner Name:<br>
+	<input type="text" name="hn" size=30px placeholder="Enter Name" required>
+	</h3></td>
+	<td><h3>Property City<br>
+		<input type="text" name="city" size=30px placeholder="Enter Property City" required>
+	</h3></td>
+	<td><h3>Enter Annual Income<br>
+	    <input type="text" name="income" size=30px placeholder="Enter Annual Income" required>
+	</h3></td>
+</tr>
+<tr>
+	<td><h3>Enter Mobile Number:<br>
+	<input type="text" name="mbn" size=30px placeholder="Mobile number" required></h3>
+	</td>
+</tr>
+<tr>
+  <td><input type="checkbox" name="chk" required>I agree to terms and conditions</td>
+</tr>
+<tr>
+  <td></td>
+  <td><input type="submit" size=30px value="Apply"></td>
+</tr>
+  </table>
+  </form>
+  </div>
+
+<div class="parag" style="background-color:lightgrey">
+<h2>How does a Home Loan work?</h2>
+<p><h3>Home loans are a breather for millennials today. Being funded with 75% to 80% of the property cost by Kotak, it becomes easy for any home loan borrower to go one step closer towards his/her dream home, without bearing a humungous expense at one go! The loan is usually paid back in equated monthly instalments and the amount payable per EMI usually depends on the tenure of the loan, the interest rate, the amount of the loan etc. However, we at Kotak Bank understand that buying a house is not only a sought-after ‘next step’ for you, but also a valuable investment. So, principally, we intend to simplify the entire process and make it seamless, hassle-free and memorable. Kotak provides home loans at attractive interest rates, along with extending to you an insurance policy.
+</h3></p>
+<h2>Are you eligible for a Home Loan?</h2>
+<p><h3>
+There are some factors which determine whether you are eligible to apply for a loan or not. These include your monthly income, the source of your income, your qualification, work and credit history, age and number of dependents, and your future plans. Check out the eligibility criteria for availing Kotak Home Loans.
+</h3>
+</div>
+
+<!--  start Footer  --> 
+<div class="footer">
+
+<div class="f1" style="float:left;margin-left:20px">
+<strong>About us</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="ourbusiness.html">Our Business</a><br><br>
+<a href="">Media centers</a><br><br>
+<a href="">Careers</a>
+</p>
+</div>
+
+<div class="f2" style="margin-left:300px;">
+<strong>Customer Service</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Important Information</a><br><br>
+<a href="">Download Forums</a><br><br>
+<a href="">Do not Call</a>
+</p>
+</div>
+
+<div class="f3" style="margin-left:600px;margin-top:-140px">
+<strong>Digital Banking</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Ways to Bank</a><br><br>
+<a href="">Insta Service</a><br><br>
+<a href="">Business</a>
+</p>
+</div>
+
+<div class="f4" style="margin-left:850px;margin-top:-140px">
+<strong>Finacial Inclusion</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Saving Account</a><br><br>
+<a href="">Current Account</a><br><br>
+<a href="">Debit Account</a>
+</p>
+</div>
+
+<div class="f5" style="float:right;margin-right:20px;margin-top:-140px">
+<strong>Other</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Credit Card T&C</a><br><br>
+<a href="">Public notice</a><br><br>
+<a href="">Regulatory Disclosure</a>
+</p>
+</div>
+
+</div>
+<!--  end  of footer  -->
+
+<!--  start  of copyright  -->
+<div class="copyright" style="background-color:#330000;
+padding:10px 10px 5px; margin-top:10px;">
+<h4 style= "color:white; font-family: 'Times New Roman', Times, serif;">Copyright &copy;Yes Bank Pvt Limited 
+<div class="vl"> <span style="color:white;margin-left:10px;">
+Follow Us :
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+</span>
+</div> 
+</h4>
+</div>
+<!--  end  of copyright  -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+</body>
+</html>

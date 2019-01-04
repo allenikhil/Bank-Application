@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Loan</title>
+<link rel = "stylesheet" type = "text/css" href = "navigationstyle.css" />
+<link rel = "stylesheet" type = "text/css" href = "topbuttonfooter.css" />
+<link rel = "stylesheet" type = "text/css" href = "copyright.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js files/topbutton.js"></script>
+<style type="text/css">
+.navbar
+{
+margin-left:-10px;
+margin-right:-10px;
+margin-top:-10px;
+}
+.subnav img
+{
+margin-bottom:-4px;
+}
+.profile b
+{
+color:blue;
+}
+body
+{
+background-color:grey;
+}
+
+td{padding-right:25px;}
+table{margin-left:300px}
+
+.loancar{margin-top:20px;margin-left:-10px;
+margin-right:-10px;color:white;background-color:#cc0066}
+select{font-size:18px;border-radius:10px}
+input[type=text]{padding:5px;border-radius:10px;out-line:0px}
+input[type=submit]{font-size:25px;border-radius:10px;out-line:0px;padding-left:15px;padding-right:15px}
+</style>
+
+</head>
+<body>	
+
+<!--  start of navbar --> 
+<div class="navbar">
+
+<div class="subnav">
+<img src="image/viewlogo.png" width="150" height="68" border="0" alt="logo" >
+</div>
+
+ 
+  <div class="subnav">
+   <button class="subnavbtn" >Apply Loans</button>
+   
+   	<div class="subnav-content">
+      <a href="homeloans.html">Home Loans</a>
+      <a href="carloans.html">Car Loans</a>
+      <a href="goldloans.html">Gold Loans</a>
+    </div>
+    </div>
+
+  <div class="subnav">
+  <a href="">  <button class="subnavbtn" style="padding: 15px 10px;">Cards </button></a>
+  </div>
+  
+  <div class="subnav">
+   <a href=""><button class="subnavbtn" style="padding: 15px 10px;">Look for offers</button></a>
+   </div>
+   
+   <div class="subnav">
+   <a href="#profile"><button class="subnavbtn" style="padding: 15px 10px;">Profile</button></a>
+   </div> 
+   
+   <div class="subnav">
+   <a href="index.html"><button class="subnavbtn" onclick="dontback" style="padding: 15px 10px;">Logout</button></a>
+   </div> 
+   
+      </div>
+  <!--end of navbar-->
+
+ <div class="loancar">
+<form method="post" action="carloan">
+  <table>
+<tr>
+	<td><h3>What type of car are you looking for?<br> 
+	<select name="type" required>
+		<option value="" placeholder="Select type" >Select type
+		<option value="new car">New Car
+		<option value="used car">Used Car
+	</select></h3>
+	</td>
+	<td><h3>City where you are currently residing?<br>
+		<input type="text" name="city" size=30px placeholder="Enter City" required>
+	</h3>
+	</td>
+	<td><h3>Which brand are you looking for?<br>
+	<select name="brand" required>
+		<option value="" placeholder="Select car">Select car
+		<option value="honda">Honda
+		<option value="hundayi">Hundayi
+		<option value="ford">Ford
+		<option value="tata">Tata
+		<option value="others">others
+	</select>
+	</h3>
+	</td>
+</tr>
+<tr>
+	<td><h3>When are you looking to buy a car?<br>
+	<select name="time" required>
+		<option value="" placeholder="Select" >Select
+		<option value="Already booked">Already booked
+		<option value="1 week">1 Week
+		<option value="2 week">2 Week
+		<option value="1 month">1 Month
+		<option value="Just Researching">Just Researching
+	</select>
+	</h3></td>
+	<td><h3>How much would you like to borrow?<br>
+		<input type="text" name="amt" size=30px placeholder="Enter Amount(>10000)" required>
+	</h3></td>
+	<td><h3>How long do you want to borrow it for?<br>
+	    <input type="text" name="years" size=30px placeholder="No of years(1-10)" required>
+	</h3></td>
+</tr>
+<tr>
+	<td><h3>How are you currently employed?<br>
+	<select name="status" required>
+		<option value="" placeholde="Select" >Select
+		<option value="salaried">Salaried
+		<option value="self employed professional">Self Employed Professional
+		<option value="self employed business">Self Employed Business
+	</select>
+	</h3></td>
+	<td><h3>Enter Mobile Number:<br>
+	<input type="text" name="mn" size=30px placeholder="Mobile number" required></h3>
+	</td>
+</tr>
+<tr>
+  <td><input type="checkbox" name="chk" required>I agree to terms and conditions</td>
+</tr>
+<tr>
+  <td></td>
+  <td><input type="submit" size=30px value="Apply"></td>
+</tr>
+  </table>
+  </form>
+  </div>
+
+<div class="parag" style="background-color:lightgrey">
+<h2>Car Loan</h2>
+<p><h3>In today’s world, owning a car has almost become a necessity with the freedom of movement and comfort that it offers. And with the Kotak Mahindra Prime Ltd. Car Loan, your dream of owning a car can become a reality with minimum effort.
+ </p> </h3>
+<p><h3>
+We provide new as well as used car loans, all tailored to meet your individual requirement with flexible schemes. Additionally, our convenient repayment options, easy processing, and flexible car loan interest rates mean that, no matter what your dream car, we can help you turn that dream into a reality
+</p></h3>
+</div>
+
+<!--  start Footer  --> 
+<div class="footer">
+
+<div class="f1" style="float:left;margin-left:20px">
+<strong>About us</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="ourbusiness.html">Our Business</a><br><br>
+<a href="">Media centers</a><br><br>
+<a href="">Careers</a>
+</p>
+</div>
+
+<div class="f2" style="margin-left:300px;">
+<strong>Customer Service</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Important Information</a><br><br>
+<a href="">Download Forums</a><br><br>
+<a href="">Do not Call</a>
+</p>
+</div>
+
+<div class="f3" style="margin-left:600px;margin-top:-140px">
+<strong>Digital Banking</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Ways to Bank</a><br><br>
+<a href="">Insta Service</a><br><br>
+<a href="">Business</a>
+</p>
+</div>
+
+<div class="f4" style="margin-left:850px;margin-top:-140px">
+<strong>Finacial Inclusion</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Saving Account</a><br><br>
+<a href="">Current Account</a><br><br>
+<a href="">Debit Account</a>
+</p>
+</div>
+
+<div class="f5" style="float:right;margin-right:20px;margin-top:-140px">
+<strong>Other</strong><br>
+<p style= "color:#646464; font-family: 'Times New Roman', Times, serif;">
+<a href="">Credit Card T&C</a><br><br>
+<a href="">Public notice</a><br><br>
+<a href="">Regulatory Disclosure</a>
+</p>
+</div>
+
+</div>
+<!--  end  of footer  -->
+
+<!--  start  of copyright  -->
+<div class="copyright" style="background-color:#330000;
+padding:10px 10px 5px; margin-top:10px;">
+<h4 style= "color:white; font-family: 'Times New Roman', Times, serif;">Copyright &copy;Yes Bank Pvt Limited 
+<div class="vl"> <span style="color:white;margin-left:10px;">
+Follow Us :
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+</span>
+</div> 
+</h4>
+</div>
+<!--  end  of copyright  -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+</body>
+</html>
