@@ -1,0 +1,53 @@
+package org.jsp.app.controllerM;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.jsp.app.modelB.MainHibernate;
+import org.jsp.app.modelB.NetBank;
+
+@WebServlet(urlPatterns="/view/plogin")
+public class PersonalLoginServlet extends HttpServlet
+{
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
+		{
+		   RequestDispatcher rd=null;
+		   PrintWriter pw=resp.getWriter();;
+		   
+		List<NetBank> personallogin=MainHibernate.login(req.getParameter("eid"),req.getParameter("psw"));
+
+			if(personallogin!=null)
+			{
+				String user=personallogin.get(0).getAccountHolder();
+				String accnum=personallogin.get(0).getAccountNumber();
+				String mailid=personallogin.get(0).getEmailId();
+				String type=personallogin.get(0).getAccountType();
+				
+				ServletContext scon=getServletContext();
+				scon.setAttribute("user",user);
+				scon.setAttribute("accnum",accnum);
+				scon.setAttribute("mailid", mailid);
+				scon.setAttribute("type", type);
+				
+				rd=req.getRequestDispatcher("jsp files/plogin.jsp");
+				rd.forward(req, resp);
+			}
+			else
+			{
+				rd=req.getRequestDispatcher("jsp files/faillogin.jsp");
+				rd.forward(req, resp);
+				//pw.println("<html><body><h1>User name or Password wrong</h1><br><a href='index.html'><button>Home</button></a><br><a href='signup.html' style='color:red'>New to NetBanking?</a></body></html>");
+			}
+		}
+	
+	
+}
